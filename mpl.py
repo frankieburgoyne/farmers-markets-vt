@@ -45,7 +45,7 @@ for index, value in enumerate(status_counts.values):  # bar heights
             ha='center', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig("figures/01_snap_status.png", dpi=200)
+plt.savefig("mpl_figures/01_snap_status.png", dpi=200)
 plt.show()
 
 # group by state and count the number of markets
@@ -90,7 +90,7 @@ for index, value in enumerate(top10['snap_pct'].to_numpy()):  # bar heights
     plt.text(index, value + 0.8, f"{value:.1f}%", ha='center', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig("figures/02_top10_states.png", dpi=200)
+plt.savefig("mpl_figures/02_top10_states.png", dpi=200)
 plt.show()
 
 # bar graph 3
@@ -117,7 +117,7 @@ for index, value in enumerate(bottom10['snap_pct'].to_numpy()):  # bar heights
     plt.text(index, value + 0.2, f"{value:.1f}%", ha='center', fontweight='bold')
 
 plt.tight_layout()
-plt.savefig("figures/03_biggest_gaps.png", dpi=200)
+plt.savefig("mpl_figures/03_biggest_gaps.png", dpi=200)
 plt.show()
 
 # scatter plot
@@ -147,5 +147,5 @@ plt.grid(True, linestyle='--', alpha=0.5)
 plt.legend()
 
 plt.tight_layout()
-plt.savefig("figures/04_markets_vs_snap_scatter.png", dpi=200)
+plt.savefig("mpl_figures/04_markets_vs_snap_scatter.png", dpi=200)
 plt.show()
